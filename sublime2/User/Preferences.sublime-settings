@@ -1,3 +1,21 @@
 {
-  "theme": "Soda Dark.sublime-theme"
+  "bold_folder_labels": true,
+  "color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night-Eighties.tmTheme",
+  "draw_white_space": "all",
+  "ensure_newline_at_eof_on_save": true,
+  "font_size": 12.0,
+  "highlight_line": true,
+  "line_padding_bottom": 0.5,
+  "line_padding_top": 0.5,
+  "match_brackets_angle": true,
+  "rulers":
+  [
+    100
+  ],
+  "shift_tab_unindent": true,
+  "tab_size": 2,
+  "theme": "Soda Light.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "use_tab_stops": true
 }

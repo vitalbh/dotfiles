@@ -1,20 +1,13 @@
-# Sample gitconfig
-#
-# You probably want to change the [user] section here since you are not me.
-
-[hub]
-        protocol = https
 [user]
-        name = Zach Holman
-        email = zach@zachholman.com
+        name = Manuel van Rijn
+        email = manuel@manuelles.nl
 [credential]
         helper = osxkeychain
 [alias]
-        co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributers = !$ZSH/bin/git-rank-contributers
+        wtf     = !$DOTFILES/bin/git-wtf
+        rank-contributers = !$DOTFILES/bin/git-rank-contributers
         count   = !git shortlog -sn
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [color]
         diff = auto
         status = auto
@@ -23,8 +16,10 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
-[apply]
-        whitespace = nowarn
+[diff]
+        external = meld
+[merge]
+        tool = meld
 [mergetool]
         keepBackup = false
 [difftool]
